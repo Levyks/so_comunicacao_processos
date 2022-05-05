@@ -71,7 +71,7 @@ void pensar(int num) {
 
 void * filosofo(void * arg) {
   
-	int num = *(int *)arg;
+  int num = *(int *)arg;
 
   while(1) {
     comer(num);
