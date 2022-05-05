@@ -12,12 +12,12 @@ int main() {
     pthread_t tid[5];
     
     for(i = 0; i < 5; i++) {
-        a[i] = i;
-        pthread_create(&tid[i],NULL,filosofo,(void *)&a[i]);
+      a[i] = i;
+      pthread_create(&tid[i],NULL,filosofo,(void *)&a[i]);
     }
 
     for(i=0;i<5;i++) {
-  		pthread_join(tid[i],NULL);
+      pthread_join(tid[i],NULL);
     }
 }
 
